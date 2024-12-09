@@ -1,0 +1,59 @@
+body {
+    border: black solid 1px;
+}
+
+h1 {
+    color: red;
+}
+
+.special {
+    color: aqua;
+}
+
+p {
+    color: green;
+}
+
+li {
+    list-style-type: "・";
+}
+
+/* タグ + class */
+li.special,
+span.special {
+    color: orange;
+    font-weight: bold;
+}
+
+/* 要素内の要素 */
+li em {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+/* 要素の直後の要素 */
+h1 + p {
+    font-size: 200%;
+}
+
+/* 状態に基づくスタイル設定 */
+a:link {
+    color: pink;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+/* セレクターは複数結合することができる。 */
+/* body タグ内の h1 直後の p タグ内にある class=".special" に適用する。*/
+body h1 + p .special {
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
